@@ -94,6 +94,8 @@ fn main() {
 
     let res = verify::<F, PC, FS, StdRng>(&vk, &statement, &proof, &mut rng);
     assert_eq!(true, res.is_ok());
+
+    println!("Puzzle Solved!✅");
 }
 
 const PUZZLE_DESCRIPTION: &str = "\
